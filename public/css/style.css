@@ -54,3 +54,8 @@
     border-radius: 3px;
     width: 35%;
     padding: .7rem .5rem; }
+
+@media only screen and (max-width: 768px) {
+  .contact {
+    grid-template-columns: 1fr;
+    grid-column: 1; } }
