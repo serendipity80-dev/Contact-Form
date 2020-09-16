@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif; }
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 80%;
+  margin: 3rem auto; }
+  .contact .img {
+    position: relative; }
+  .contact .logo {
+    position: absolute;
+    top: 1rem;
+    left: 4rem;
+    opacity: .2; }
+  .contact .info {
+    padding-left: 2rem;
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); }
+    .contact .info h1 {
+      font-size: 3rem;
+      letter-spacing: .3em;
+      text-transform: uppercase;
+      color: grey;
+      font-weight: 300; }
+    .contact .info p {
+      color: grey;
+      padding-bottom: 4rem; }
+  .contact textarea {
+    border: none;
+    border-bottom: 1px solid grey;
+    margin-bottom: 1rem; }
+  .contact label {
+    color: grey;
+    letter-spacing: .3em;
+    margin-left: 0.4rem; }
+  .contact input {
+    border: none;
+    border-bottom: 1px solid grey;
+    margin-bottom: 4rem;
+    padding: .5rem; }
+  .contact ::placeholder {
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1rem; }
+  .contact .btn {
+    background-color: #333;
+    color: grey;
+    font-size: 1rem;
+    border-radius: 3px;
+    width: 35%;
+    padding: .7rem .5rem; }

@@ -1,0 +1,89 @@
+@import 'variables';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-stack;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    margin: 3rem auto;
+
+    .img {
+        position: relative;
+
+    }
+
+    .logo {
+        position: absolute;
+        top: 1rem;
+        left: 4rem;
+        opacity: .2;
+    }
+
+    .info {
+        padding-left: 2rem;
+        margin-top: 2.5rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+
+
+        h1 {
+            font-size: 3rem;
+            letter-spacing: .3em;
+            text-transform: uppercase;
+            color: $light-color;
+            font-weight: 300;
+        }
+
+        p {
+            color: $light-color;
+            padding-bottom: 4rem;
+            
+        }
+    }
+    textarea{
+        border: none;
+        border-bottom: 1px solid $light-color;
+        margin-bottom: 1rem;
+    }
+
+    label {
+        color: $light-color;
+        letter-spacing: .3em;
+       margin-left:.4rem
+        // margin-bottom: 2rem;
+
+
+    }
+
+    input {
+        border: none;
+        border-bottom: 1px solid $light-color;
+        margin-bottom: 4rem;
+        padding: .5rem;
+
+    }
+
+    ::placeholder {
+        color: $primary-color;
+        font-weight: bold;
+        font-size: 1.1rem;
+
+    }
+
+    .btn {
+        background-color: $primary-color;
+        color: $light-color;
+        font-size: 1rem;
+        border-radius: 3px;
+        width: 35%;
+        padding: .7rem .5rem;
+    }
+}
